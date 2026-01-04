@@ -1,0 +1,63 @@
+{% extends 'base-admin.html.twig' %}
+
+{% block title %}Classes{% endblock %}
+
+{% block body %}
+<main class="app-main"> <!--begin::App Content Header-->
+    <div class="app-content-header"> <!--begin::Container-->
+        <div class="container-fluid"> <!--begin::Row-->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="mb-0">Editer une inscription</h3>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-end">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Inscription
+                        </li>
+                    </ol>
+                </div>
+            </div> <!--end::Row-->
+        </div> <!--end::Container-->
+    </div>
+    <div class="app-content"> <!--begin::Container-->
+        <div class="container-fluid"> <!--begin::Row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <!--begin::Quick Example-->
+                    <div class="card card-primary card-outline mb-4">
+                        <!--begin::Form-->
+                        <form>
+                            <!--begin::Body-->
+                            <div class="card-body">
+        
+                                <div class="mb-3">
+                                    <label class="form-label">Matricule</label>
+                                    <input type="text" class="form-control"
+                                        aria-describedby="Help">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Montant</label>
+                                    <input type="text" class="form-control"
+                                        aria-describedby="Help">
+                                </div>                
+                            </div>
+                            <!--end::Body-->
+                            <!--begin::Footer-->
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-danger float-start">Annuler</button>
+                                <button type="submit" class="btn btn-success float-end">Mettre à jour</button>
+                            </div>
+                            <!--end::Footer-->
+                        </form>
+                        <!--end::Form-->
+                    </div>
+                    <!--end::Quick Example-->
+                </div>
+            </div> <!--end::Row-->
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main> <!--end::App Main--> <!--begin::Footer-->
+
+{% endblock %}

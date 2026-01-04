@@ -8,13 +8,13 @@
         <div class="container-fluid"> <!--begin::Row-->
             <div class="row">
                 <div class="col-sm-6">
-                    <h3 class="mb-0">Liste des classes</h3>
+                    <h3 class="mb-0">Liste d'eleves</h3>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-end">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Classes
+                            Eleves
                         </li>
                     </ol>
                 </div>
@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="card-tools float-end">
                                     <a href="{{ path('app_create_classe') }}" class="btn btn-primary mb-1">
-                                        <i class="bi bi-plus-lg"></i> Ajouter une classe
+                                        <i class="bi bi-plus-lg"></i> Ajouter un eleve
                                     </a>
                                 </div>
                             </div>
@@ -46,9 +46,10 @@
                                 <thead>
                                     <tr>
                                         <th style="width: 10px">#</th>
-                                        <th>Libelle</th>
-                                        <th>Niveaux</th>
-                                        <th>Montant de la scolarité</th>
+                                        <th>Matricule</th>
+                                        <th>Nom</th>
+                                        <th>Prenom</th>
+                                        <th>Contact du Parent</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
