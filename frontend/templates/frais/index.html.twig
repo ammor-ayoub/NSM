@@ -1,0 +1,76 @@
+{% extends 'base-admin.html.twig' %}
+
+{% block title %}Classes{% endblock %}
+
+{% block body %}
+<main class="app-main"> <!--begin::App Content Header-->
+    <div class="app-content-header"> <!--begin::Container-->
+        <div class="container-fluid"> <!--begin::Row-->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="mb-0">Liste des frais de scolarité</h3>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-end">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Frais
+                        </li>
+                    </ol>
+                </div>
+            </div> <!--end::Row-->
+        </div> <!--end::Container-->
+    </div>
+    <div class="app-content"> <!--begin::Container-->
+        <div class="container-fluid"> <!--begin::Row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-6">
+                        <div class="card-header">
+                            {# <h3 class="card-title">Liste des Années scolaires </h3> #}
+                            <div class="col-md-12">
+                                <div class="col-md-4 float-start d-inline">
+                                    <input type="text" class="form-control"
+                                        placeholder="Rechercher">
+                                </div>
+                                <div class="card-tools float-end">
+                                    <a href="{{ path('app_create_classe') }}" class="btn btn-primary mb-1">
+                                        <i class="bi bi-plus-lg"></i> Ajouter un nouveau frais de scolarité
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div> <!-- /.card-header -->
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 10px">#</th>
+                                        <th class="text-sm font-medium text-gray-900 px-6 py-6">Année scolaire</th>
+                                        <th class="text-sm font-medium text-gray-900 px-6 py-6">Niveau</th>
+                                        <th class="text-sm font-medium text-gray-900 px-6 py-6">Montant Scolarité</th>
+                                        <th class="text-sm font-medium text-gray-900 ">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div> <!-- /.card-body -->
+                        <div class="card-footer clearfix">
+                            <ul class="pagination pagination-sm m-0 float-end">
+                                <li class="page-item"> <a class="page-link" href="#">&laquo;</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">&raquo;</a> </li>
+                            </ul>
+                        </div>
+                    </div> <!-- /.card -->
+                </div> <!-- /.col -->
+            </div> <!--end::Row-->
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main> <!--end::App Main--> <!--begin::Footer-->
+
+{% endblock %}
